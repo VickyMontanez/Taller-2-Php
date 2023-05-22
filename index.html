@@ -4,20 +4,34 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="ejercicio1.js" defer></script>
+    <script src="ejercicio2.js" defer></script>
     <title>Document</title>
 </head>
 <body>
-    <!-- Construir el algoritmo para un programa que ingrese tres
+    <!-- 1. Construir el algoritmo para un programa que ingrese tres
     notas de un alumno, si el promedio es menor o igual a 3.9
     mostrar un mensaje "Estudie“, de lo contrario un mensaje que
     diga "becado" -->
-    <form id="myForm">
-        <input type="text" pattern="[0-9-.]+" required name="nota" placeholder="Ingrese su nota">
-        <input type="text" pattern="[0-9-.]+" name="nota2" placeholder="Ingrese su nota">
-        <input type="text" pattern="[0-9-.]+" name="nota3" placeholder="Ingrese su nota">
-        <input type="submit" value="Guardar">
-    </form>
-    <pre></pre>
+    <fieldset>
+        <legend>Primer Ejercicio</legend>
+        <form id="myForm">
+            <input type="text" pattern="[0-9-.]+" required name="nota" placeholder="Ingrese su nota">
+            <input type="text" pattern="[0-9-.]+" required name="nota2" placeholder="Ingrese su nota">
+            <input type="text" pattern="[0-9-.]+" required name="nota3" placeholder="Ingrese su nota">
+            <input type="submit" value="Guardar">
+        </form>
+        <pre></pre>
+    </fieldset>
+
+    <!-- 2. Dado un número indicar si es par o impar y si es mayor de 10. -->
+    <fieldset>
+        <legend>Segundo Ejercicio</legend>
+        <form id="form2">
+            <label>Ingresa un número y te voy a indicar qué es :</label>
+            <input name="number" required type="number" placeholder="Ingresa un número">
+            <input type="submit" value="Enviar">
+        </form>
+        <span></span>
+    </fieldset>
 </body>
 </html>
