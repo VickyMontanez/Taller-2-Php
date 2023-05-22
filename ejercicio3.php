@@ -9,3 +9,4 @@ foreach($_DATA as $nums){
 };
 
 echo "El voltaje de tu circuito es de $result V (voltios)";
+?>
