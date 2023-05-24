@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="ejercicio8.js" defer></script>
+    <script src="ejercicio9.js" defer></script>
     <title>Document</title>
 </head>
 <body>
@@ -15,9 +15,9 @@
     <fieldset>
         <legend>Primer Ejercicio</legend>
         <form id="myForm">
-            <input type="text" pattern="[0-9-.]+" required name="nota" placeholder="Ingrese su nota">
-            <input type="text" pattern="[0-9-.]+" required name="nota2" placeholder="Ingrese su nota">
-            <input type="text" pattern="[0-9-.]+" required name="nota3" placeholder="Ingrese su nota">
+            <input type="text" pattern="[0-9-.]+" step="any" required name="nota" placeholder="Ingrese su nota">
+            <input type="text" pattern="[0-9-.]+" step="any" required name="nota2" placeholder="Ingrese su nota">
+            <input type="text" pattern="[0-9-.]+" step="any" required name="nota3" placeholder="Ingrese su nota">
             <input type="submit" value="Guardar">
         </form>
         <pre></pre>
@@ -28,7 +28,7 @@
         <legend>Segundo Ejercicio</legend>
         <form id="form2">
             <label>Ingresa un número y te voy a indicar qué es :</label>
-            <input name="number" required type="number" placeholder="Ingresa un número">
+            <input name="number" required type="number" step="any" placeholder="Ingresa un número">
             <input type="submit" value="Enviar">
         </form>
         <span></span>
@@ -40,9 +40,9 @@
         <form id="form3">
             <span>Para cualcular el Voltaje de un circuito necesitas:</span><br>
             <label>Ingresar la resistencia en Ohmnios:</label>
-            <input type="number" required name="ohmnios" placeholder="Ingresa los Ohmnios"><br>
+            <input type="number" required step="any"name="ohmnios" placeholder="Ingresa los Ohmnios"><br>
             <label>Ingresar la intensidad en Amperios:</label>
-            <input type="number" required name="amperios" placeholder="Ingresa los Amperios"><br>
+            <input type="number" required step="any" name="amperios" placeholder="Ingresa los Amperios"><br>
             <input type="submit" value="Enviar">
             <p id="th"></p>
         </form>
@@ -84,8 +84,8 @@ personas y determine el nombre de la persona con mayor edad. -->
         <legend>Quinto Ejercicio</legend>
         <form id="form5">
             <label>Ingresa 2 numeros:</label><br>
-            <input type="number" name="numero1" required>
-            <input type="number" name="numero2" required>
+            <input type="number" name="numero1" step="any" required>
+            <input type="number" name="numero2" step="any" required>
             <input type="submit" value="Guardar">
         </form>
         <p id="fv"></p>
@@ -99,12 +99,12 @@ personas y determine el nombre de la persona con mayor edad. -->
     <fieldset>
         <legend>Sexto Ejercicio</legend>
         <form id="form6">
-            <input type="text" name="nombre" placeholder="Ingresa el nombre de tu estudiante">
-            <select name="sexo">
+            <input type="text" name="nombre" required placeholder="Ingresa el nombre de tu estudiante">
+            <select name="sexo" required>
                 <option value="Femenino">Femenino</option>
                 <option value="Masculino">Masculino</option>
             </select>
-            <input type="number" id="nota" placeholder="Ingrese la nota de su alumno">
+            <input type="number" id="nota" step="any" required placeholder="Ingrese la nota de su alumno">
             <input type="submit" value="Guardar">
         </form>
         <p id="stx"></p>
@@ -116,9 +116,9 @@ personas y determine el nombre de la persona con mayor edad. -->
     <fieldset>
         <legend>Septimo Ejercicio</legend>
         <form id="form7">
-            <input type="text" name="articulo" id="articulo" placeholder="Ingresa el nombre del articulo">
-            <input type="number" name="cnt" id="cnt" placeholder="Ingrese la cantidad">
-            <input type="number" name="precio" id="precio" placeholder="Ingrese el precio">
+            <input type="text" name="articulo" id="articulo" required placeholder="Ingresa el nombre del articulo">
+            <input type="number" name="cnt" id="cnt" required placeholder="Ingrese la cantidad">
+            <input type="number" name="precio" id="precio" step="any" required placeholder="Ingrese el precio">
             <input type="submit" value="Guardar">
         </form>
         <p id="spt"></p>
@@ -133,14 +133,32 @@ personas y determine el nombre de la persona con mayor edad. -->
         <legend>Octavo Ejercicio</legend>
         <form id="form8">
             <label for="">Ingresa el lado de un cuadrado</label>
-            <input type="number" name="cua" id="cua" placeholder="Ingrese cm"><br>
+            <input type="number" name="cua" id="cua" step="any" required placeholder="Ingrese cm"><br>
             <label for="">Ingresa la base del rectángulo:</label>
-            <input type="number" name="bs" id="bs" placeholder="Ingrese cm"><br>
+            <input type="number" name="bs" id="bs" step="any" required placeholder="Ingrese cm"><br>
             <label for="">Ingresa la altura del rectángulo:</label>
-            <input type="number" name="al" id="al" placeholder="Ingrese cm"><br>
+            <input type="number" name="al" id="al" step="any" required placeholder="Ingrese cm"><br>
             <input type="submit" value="Guardar">
         </form>
         <p id="oct"></p>
     </fieldset>
     
+    <!-- 9. N atletas han pasado a finales en salto triple en los juegos
+    olímpicos femenino de 2022. Diseñe un programa que pida por
+    teclado los nombres de cada atleta finalista y a su vez, sus
+    marcas del salto en metros. Informar el nombre de la atleta
+    campeona que se quede con la medalla de oro y si rompió
+    récord, reportar el pago que será de 500 millones. El récord
+    esta en 15,50 metros. -->
+    <fieldset>
+        <legend>Noveno Ejercicio</legend>
+        <form id="form9">
+            <label for="">Ingresa el nombre de la finalista y su marce de salto:</label>
+            <input type="text" name="name" id="name" required placeholder="Ingresa el nombre del finalista">
+            <input type="number" name="rcd" id="rcd" step="any" required placeholder="Ingresa su marca de salto">
+            <input type="submit" value="Guardar">
+        </form>
+        <p id="nv"></p>
+    </fieldset>
+
 </html>
